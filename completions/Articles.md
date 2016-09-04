@@ -226,3 +226,62 @@ RQ7: Where in the requirements life cycle should OSRs be handled?
 According to our respondents' answers, OSRs should be first handled during the requirements analysis phase, requirements validation phase and requirements changes phase. Our respondents also suggested that requirements elicitation is not the best stage to manage OSRs.
 
 Our results show that OSRs is a significant challenge for software system development. 84.3% of the respondents considered that OSRs are serious. In addition, a clear majority of respondents said there are no useful methods or tools to support the identification and treatment for OSRs. Only 10% of the respondents reported having automated support. This suggests that there is a need to develop automated methods or tools to support practitioners identify and manage OSRs.
+
+####- Assessing challenges of continuous integration in the context of software requirements breakdown: a case study 
+
+In this paper, Ericsson as an example, based on case studies and interviews to determine the challenges of continuous integration and requirements break down, and how the latter affects the implementation of the continuous integration process.
+
+In order to support more frequent integration, requirements need to be small enough so that the developer can provide individually tested per day, and integration times. Under continuous integration environment which is not always an easy task. So breaking down large user stories into small enough stories with the right level of detail and visible business and customer value has been identified as a challenge. 
+
+This article only establishes a case study in which the focus and case is an organization. Thus, the unit of analysis is the teams under study that are using continuous integration. From the methodological point of view, the study is from the perspective of interpretation. A semi-structured interview is a method of collecting data in this study. In this study conducts 13 interviews with eight participants from Sweden and five from China.
+
+I will summarize the result based on the different research question.
+
+For RQ1: What are the challenges of implementing a continuous integration process in practice?
+
+There are seven main challenges from the result: developers’ mindset, tools and infrastructure, testing, domain applicability, understanding of continuous integration, code dependencies and software requirements. 
+
+In the opinion of respondents, mindset, tools and infrastructure are the most mentioned. People’s mindset and attitude play an important role when  adopting continuous integration. Similarly, tools, infrastructure and testing also have a significant impact on the success of implementing continuous integration. This means that the use of continuous integration can be considered to introduce a change in the existing software process.
+
+For RQ2: What are the challenges of software requirements breakdown in practice?
+
+There are four main challenges. 
+
+1. Requirements abstraction 
+
+Requirements abstraction is a challenge for developers as they struggled with requirements that are either too large, ambiguous or too low level. In addition, details’ level and quality requirements depend on the type  of requirements. People tend to take shortcuts and not follow a uniform architectural design. This, in turn leads to difficult to estimate the impact of changes. A large number of sub-systems make coordination difficult and will increase the pressure of one developer. This makes requirement difficult to break down into smaller units that can operate independently. At the same time find the right balance when breaking large software requirements is also a big challenge.
+
+2. Alignment of requirements and tests 
+
+Requirements need to be linked up with tests for them to be properly integrated into the mainline, aligning them proved to be a challenge for the studied company. Previously, testing was mainly focused on the end of a sprint. However, the introduction of continuous integration has turned their attention from functional testing to every integration. One software developer argues that it is tough to sync requirements that need to be tested together when integrating.
+
+3. Customer value 
+
+Breaking down software requirements into small enough units to support the integration of code more frequently, while maintaining a competitive advantage in the market and the value of the customer is a very tricky thing. Previously, breaking down requirements was up to system manager, because they have more knowledge. Now, this task is performed by the product owner and the team. Although this will improve access to the customer, many developers feel there is still more work to be done according to an agile coach.
+
+4. Guiding principle 
+
+For the interviewees, no clear process and guidance is a challenge. Since without guidance, how to break down requirements is decided by the teams. Although no unified process has been welcomed by most of the team, especially the more mature team, some of the young team think the lack of a uniform process will make their transition more difficult.
+
+
+For RQ3: How could the breakdown of software requirements influence the adoption of continuous integration? 
+
+1. The necessity of software requirements breakdown 
+
+When teams are producing new features, they will face more difficulties while transitioning to continuous integration compared to teams that are mainly maintaining existing code and fixing bugs. Teams will face more difficulties while using continuous integration due to the issues when breaking down requirements.
+
+2. Implications of software requirements breakdown 
+
+a. Implementation dependencies 
+
+Continuous integration promotes highly integrated frequency, software requirements may need to be divided accordingly. However, dependencies within the execution of said requirement might benefit from being developed as a whole unit. In addition, implementation dependencies might not be determined prior to the actual development.
+
+b. Test dependencies 
+
+Test dependencies play an important role when breaking down the software requirements into smaller units. If you want to integrate these small units separately, they need to be tested individually.
+
+c. Integration scope 
+
+The results showed that defining the correct scope of integration is important. Result suggest that the code should be integrated to provide customers with new value and contribute to the growth feature.
+
+Overall, the software requirements, as well as their breakdown play an important role in the use of continuous integration process, especially with respect to an increased integration frequency. Those who want to transition to the continuous integration companies can use these challenges as a checklist to reduce the risk.
