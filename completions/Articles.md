@@ -45,7 +45,9 @@ The evaluation shows that the QUPER model is easy to understand, improves the un
 
 #####Reference
 [8] S. Konrad and M. Gall, “Requirements Engineering in the Development of Large-Scale Systems,” in 16th IEEE International Requirements Engineering, 2008. RE ’08, 2008, pp. 217–222.
+
 [9] Safwat and M. B. Senousy, “Addressing Challenges of Ultra Large Scale System on Requirements Engineering,” Procedia Computer Science, vol. 65, pp. 442–449, 2015.
+
 [10] B. Regnell, R. B. Svensson, and K. Wnuk, “Can We Beat the Complexity of Very Large-Scale Requirements Engineering?,” in Requirements Engineering: Foundation for Software Quality, B. Paech and C. Rolland, Eds. Springer Berlin Heidelberg, 2008, pp. 123–128.
 
 ####Read up on GAP / CVA / IVA Analysis!
