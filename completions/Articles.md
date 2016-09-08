@@ -81,9 +81,6 @@ Internal Value Analysis is a technique to measure whether a product is in line w
 All the three tools help the company choose between products and keep a balance between high risk-high reward and low risk-low reward development. 
 
 #####Reference
-[1] S.A. Ross, R. Westerfield, B.D. Jordan, Essentials of Corporate Finance, Third ed., McGraw-Hill, Boston, 2001. 
-
-[2] .H. Mintzberg, B.W. Ahlstrand, J. Lampel, Strategy Safari: A Guided Tour through the Wilds of Strategic Management, Free Press, New York, NY, 1998. 
 
 [3] A. Gomes and A. Pettersson, Market-Driven Requirements Engineering Process Model – MDREPM. 2007.
 
