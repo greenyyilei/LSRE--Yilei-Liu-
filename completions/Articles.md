@@ -52,14 +52,12 @@ The evaluation shows that the QUPER model is easy to understand, improves the un
 
 ####Read up on GAP / CVA / IVA Analysis!
 #####GAP Analysis[3][4][5]
-A gap analysis is a method that assessing the difference between actual performance with the potential or desired performance. Gap refers to a needs analysis, needs assessment or need-gap analysis. In software development, gap analysis can show which requirements are missing, which are delete and which are still need to be development.
 
+A gap analysis is a method that assessing the difference between actual performance with the potential or desired performance. Gap refers to a requirements analysis, requirements assessment or requirement-gap analysis. In software development, gap analysis can show which requirements are missing, which are delete and which are still need to be development. Gap analysis is task that requirements managers perform in order to ensure the scheduled product functions are covered by the appropriate platform project[4]. The goal of GAP analysis is to ensure the misalignments between market requirements and supplier requirements are addressed[4]. 
 
 The first step to conducting a gap analysis is to establish a specific target objective. The next step is to analyze the current processes by collecting relevant data. The last step, after comparing the current state with the potential goals, draw a comprehensive plan for future develops. 
 
-
 In the gap analysis template, it has the following components:
-
 1. Identify the current and future states. 
 
 2. Describe the gap
@@ -67,26 +65,151 @@ In the gap analysis template, it has the following components:
 3. Bridging the gap. 
 
 There are some pro and con of GAP analysis.
+
 Advantage: 
-Organization overview: a GAP analysis can provide a comprehensive overview of the product. The overview helps the organization identify gaps, analyze the reasons that led to the current position. 
-Establish the priorities of the requirements. 
+
+Organization overview: a GAP analysis can provide a comprehensive overview of the product. The overview helps the organization identify gaps, analyze the reasons that led to the current position. Establish the priorities of the requirements. 
 
 Disadvantage:
+
 Time and cost are two major disadvantages of the gap analysis. GAP analysis will also influence the morale of the staff. It will result in apprehension or suspicion.
 
-#####CVA analysis[3]
-CVA is similar to GAP but includes the perspective of using competitor products in the analysis. CVA can be used to verify the perceived customer value and measure the selection quality post-release.  
+#####CVA analysis
+
+CVA(customer value analysis) is similar to GAP but includes the perspective of using competitor products in the analysis. CVA can be used to verify the perceived customer value and measure the selection quality post-release[3]. 
+
+A large number of meaningful user feedback to understand the market needs is crucial[6].
+
+Customer value is created by[6]:
+
+1. Select the most important value drivers
+
+2. Based on the most attention factors, proposing a value proposition that you are able to provide.
+
+3. Setting product pricing at a level commensurate with the level of perceived value provided.
+
+The conjoint analysis tools can be used to complete the CVA analysis[3].
+
+CVA is a powerful tool that can be used to define a company's products and service as it provides a better understanding of what customers value most[6]. It provides the company a perspective that they can compare their performance with their competitors[6]. This information allows managers to improve products’ quality on area where it will be most beneficial and pertinent to its respective customers[6].
+
 #####IVA analysis
-Internal Value Analysis is a technique to measure whether a product is in line with the product strategies, taking limit resources and other products into account[1][2]. IVA analysis considers the time, money, risk, and knowledge, the complementing data from GAP and CVA, requirements prioritization, dependency mapping and cost estimate. 
+
+Internal value analysis is a technique to evaluate whether a product is in line with the product strategies and his company's strategy, taking the limited resources and other  products into account[1][2]. IVA analysis considers the time, money, risk, and knowledge, the complementing data from GAP and CVA, requirements prioritization, dependency mapping and cost estimate[7]. I think, IVA can be a good assessment of the entire production process, reduce the gap to reducing the risk of product failure.
+
 All the three tools help the company choose between products and keep a balance between high risk-high reward and low risk-low reward development. 
 
 #####Reference
+[1] S.A. Ross, R. Westerfield, B.D. Jordan, Essentials of Corporate Finance, Third ed., McGraw-Hill, Boston, 2001. 
+
+[2] .H. Mintzberg, B.W. Ahlstrand, J. Lampel, Strategy Safari: A Guided Tour through the Wilds of Strategic Management, Free Press, New York, NY, 1998. 
 
 [3] A. Gomes and A. Pettersson, Market-Driven Requirements Engineering Process Model – MDREPM. 2007.
 
 [4] K. Wnuk, “Understanding and Supporting Large-Scale Requirements Management.”
 
 [5] K. Wnuk, B. Regnell, and L. Karlsson, “What Happened to Our Features? Visualization and Understanding of Scope Change Dynamics in a Large-Scale Industrial Setting,” in Requirements Engineering Conference, 2009. RE ’09. 17th IEEE International, 2009, pp. 89–98.
+
+[6] Customer Value Analysis: How Customers Make Purchase Decisions. (2015, June). Retrieved from http://www.slideshare.net/jmckeever/customer-value-analysis-how-customers-make-purchase-decisions-pdf
+
+[7] T. Gorschek and A. M. Davis, “Requirements engineering: In search of the dependent variables,” Information and Software Technology, vol. 50, no. 1–2, pp. 67–75, Jan. 2008.
+
+####• What tools are available for Continuous Integration? 
+
+#####– Try one out (build something, have it run tests automatically, . . . ), and write up your experiences. 
+
+In software engineering, continuous integration (CI) is the practice of merging all developer working copies to a shared mainline several times a day[9].
+
+The features of Continuous Integration 
+
+It is a cyclical automatic integration testing process, checking code, compile building, test running , result recording, and test statistic are all automatically, without human intervention. It needs a dedicated server to perform an integration build and code hosting tools to support. 
+
+The role of Continuous Integration
+
+It guarantees the quality of the submitted code, reducing the pressure on the software when it is published. Each step of continuous integration is done automatically, without much human intervention, and helps to reduce the repetitive processes to save time, cost and effort.
+
+The following are two tools for CI: 
+
+######Jenkins[8]
+
+Jenkins is focused on two major jobs: building/testing software projects continuously and monitoring externally-run jobs. 
+Jenkins is available as a service from third-party vendors. But if you have a big list of software releases need to be tested, it may be better to run it on your own server. It not only gives the infrastructure issue full control but also help for companies worried about  software security.
+
+######Buildbot[8]
+
+Buildbot is developed in Python and based on the Twisted framework. It began as an alternative to the Tinderbox project and is now used in Mozilla, Webkit, Chromium, and others. The ideology behind this setup is that most CI tools have a fixed fundamental design and limited to the basic design tools envisaged by the author. But use cases, such as mixed-language applications or complex release tasks, may have those assumptions to be violated. Buildbot design allows your installation to grow with your requirements, begin with a simple process to meet your unique needs.
+
+Travis CI, Strider, and Integrity are all common tools for continuous integration. 
+
+######My experiences of using Jenkins: 
+
+Easy to install: Jenkins installation is very simple. We only need to download the latest jenkins.war files from the Jenkins home page and then run java -jar jenkins.war. We don’t  need additional installation and install the database;
+
+Easy to configure: Jenkins provides rich management and configuration functions, including system configuration, management plug-in, view system information, system log, node management, Jenkins command line window, information statistical and other functions. When I tried it, I found Jenkins very useful.
+
+Change support: Jenkins can acquire and generate the code update lists  from the code repository (Subversion / CVS) and outputs to the compiler output information.
+
+Support permanent link: Users access Jenkins via web, and these web page link addresses are permanent link addresses, so you can use these links directly in various documents.
+
+Support distributed build: Jenkins can distribute integrated construction work to multiple computers to complete.
+
+Support third-party plug-ins: Jenkins also provides a wealth of plug-in support, which makes Jenkins become more and more powerful. We can easily install a variety of third-party plug-ins, thus facilitating quick integration of third-party applications. For example, Jenkins provides a plug-in for IBM Rational ClearCase support.
+
+#####Reference
+[8] “6 top continuous integration tools,” Opensource.com. [Online]. Available: https://opensource.com/business/15/7/six-continuous-integration-tools.
+[9] “Continuous integration,” Wikipedia, the free encyclopedia. 31-Aug-2016.
+
+####What is technical product management?
+
+Gap between Management and Technical Management[10]
+
+Requirements can be seen as the-least-common-denominator on which decisions affecting what to include in the product offering is decided. This makes communication between management and technical management important. All parties should be able to participate in the decision-making process from the early triage to the final selection. In addition, all parties have a lot of requirements in their own sources. Due to these reasons, the process MDRE needs to provide decision support material, multiple roles, to encourage and support cooperation and joint work.
+
+In reality, the term Technical Product Manager describes a person, rather than a role. Specifically, it describes a product manager who has a technical background and working in a technical product. It does not describe a product manager who needs to implement technical tasks, such as software architecture design and coding. They did not actually develop the product, they just closing the coordination in the software development team as a product manager[11].
+
+Technical Product Manager Do’s[11]:
+
+1. Focusing on the role of the business side.
+
+2. Using your skills to improve prioritization and planning.
+
+3. Using your professional skills to bridge the communication between engineering and the rest of the world.
+
+Technical Product Manager Don’t’s[11]:
+
+1.  Don’t design/solution the product yourself.
+
+2. Don’t take on non-Product Management deliverables.
+
+3. Don’t get caught up in Agile, or whatever methodology you’re using.
+
+#####Reference
+
+[10]Gorschek T (2006) Requirements Engineering Supporting Technical Product Management. Doctoral Dissertation Series No. 2006:01. Blekinge Institute of Technology.
+
+[11] D. Elizalde, “What is a Technical Product Manager, Anyway?,” MindTheProduct, 12-May-2014. [Online]. Available: http://www.mindtheproduct.com/2014/05/technical-product-manager-anyway/. 
+
+
+####• What is roadmapping? How can you do it large scale? 
+
+A roadmap draws a timeline of what things will happen, combined with different aspects of product strategies, such as commercial and technological[14]. In other words, the product roadmap can be used to maintain attention on the long-term intentions, which are often defined at a high level (organizational strategies), as well as keeping the focus on the right issues that reflect these intentions (product strategies)[14]. The aspects of markets, products and technology can be included in a roadmap and are usually use a time-based chart to represent these activities when it will happen in the lifecycle[14]. Since the roadmap is built upon a long-term perspective, among others, marketing information it is important to frequently update and review these[14]. 
+
+The literature provides many types of roadmap documents, (Schalken et al. 2001) where the one suitable for MDRE contexts release planning is the Product-Technology Roadmap[15]. Roadmapping is a complex task, and it brings challenges in cooperation between different levels of product development, continuous communication (R. E. Albright 2003), dependencies handling between related products, and coping with rapid technology changes (Carmel 1999)[15].
+
+Developing a roadmap has three main purposes[12]. It helps reach a consensus comprising a series of requirements and the technologies required to satisfy those requirements, it provides a mechanism that can help predict the development of technology, and it provides a framework to help plan and coordination of technical development [13].
+
+In my opinion, to do large-scale product roadmap needs to consider many factors, including product attributes, the dependency between product characteristics, product cycle, the characteristics of competitors, market value, market share and other factors. Because the complexity of large-scale products is very high, so the mutual influence between the characteristics of the product is very large. Based on [16], self-awareness and self-adaptation have become primary concerns in large-scale systems, we can conclude that modeling dependencies between resources, goals, and activities increase system efficiency and effectiveness will make the expected results can be predicted more precisely.
+
+#####Reference
+
+[12] Laube, T. and Abele, T. (2005). Technologie-Roadmap: Strategisches und taktisches Technologiemanagement. Ein Leitfaden. Fraunhofer-Institut Produktionstechnik und Automatisierung (IPA), Stuttgart, Germany. ISBN 3-8167-7186-6
+
+[13] “Technology roadmap,” Wikipedia, the free encyclopedia.
+
+[14] A. Gomes–andrigo, A. Pettersson, and T. Gorschek–tony, “Market-Driven Requirements Engineering Process Model–MDREPM,” 2007, version 1.0.”
+
+[15] K. Wnuk, “Understanding and supporting large-scale requirements management,” LU-CS-LIC, vol. 2010, 2010.
+
+[16] S. Dustdar, C. Dorn, F. Li, L. Baresi, G. Cabri, C. Pautasso, and F. Zambonelli, “A Roadmap Towards Sustainable Self-aware Service Systems,” in Proceedings of the 2010 ICSE Workshop on Software Engineering for Adaptive and Self-Managing Systems, New York, NY, USA, 2010, pp. 10–19.
 
 ####	–  Gorschek & Davis “Requirements Engineering. In search of dependent variables” 
 
