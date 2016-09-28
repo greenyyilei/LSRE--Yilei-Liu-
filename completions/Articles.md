@@ -1,5 +1,5 @@
 ###•	What is large scale requirements engineering? 
-The project that has less than 1000 requirements[10]. 
+The project that has less than 1000 requirements[10]. The project has a complex structure and a variety of sources of requirements. 
 ###•	What are the challenges in large scale requirements engineering? 
 Large number of customer requirements takes challenges for analysing, specifying, and managing requirements. To mitigate this challenge, we can develop a well-structured feature list and make a good understanding of customer requirements [8].
 Formal communication and interface to customer. The large number of customer requirements make understanding the various aspects of the software very challenging. In order to mitigate this challenge, clarify customer requirements in the early stage of the development process is very important[8]. 
@@ -220,6 +220,32 @@ Requirements phase: it is the commonly used measure among companies to improve t
 Project: it is often measured about whether the project was completed on time, within the budget, and did it meet the requirements, how many of the documented requirements were actually implemented. It includes dependent variables: project cost and time, project estimates and the degree of requirements change. At this level, there is four requirement-related cause exist for a project’s success or fail. They are 1) poor estimation techniques; 2) mismatch between requirements specified and requirements satisfied; 3) evolving requirements; 4) mismanagement. 
 
 Product: the dependent variables in this level determine the degree of product success. It includes measures related to requirements selection and the degree of impact. What requirements are selected to realize is very important for the successful of a product. At this level, two issues are directly responsible for success or fail. They are requirements selection and product strategies. Actually they are relevant to whether the product make money. Selected the right requirements from the customer perspective and meet customer expectations will have strong impact on the market success. 
+
+
+####How do you connect your requirements to your architecture?
+
+Various approaches have been proposed to assist architects in transitioning from requirements to an architecture, or even (partially) automate this step[2]. They defined a more systematic technique[2]. They describe a method to transform the KAOS requirements model into a so-called Architectural Prescription Language (APL) specification, which is a high-level architectural model[2].
+
+As another example of a systematic technique, Grünbacher et al. [Extraordinary General Meeting, GEM04] propose to use an intermediate model (called CBSP) for the requirements that have been mapped[2]. The intermediate model includes a set of architectural concepts such as components, buses (connectors), system-wide functionality, and properties of each of these, but still remains close to the system's requirements[2]. The creation of the intermediate model is guided through five steps. Using this intermediate model, the gap between requirements and architecture is reduced, and non-functional requirements can be explicitly modeled[2].
+
+More recently, Pimentel [PLC+12] proposed a process for generating architecture models (expressed in the Acme language) from requirements model (expressed in i*), specifically adaptive systems[2]. The method is based on the STREAM [Luc10], and there are several methods proposed to assist architects in transitioning from requirements to an architecture, or even (partially) automating this step[2].
+
+M. Svahnberg said the PQA is used together with the FQA(Framework for Quality Attribute) and the FAS(Framework for Architecture Structure) to evaluate which architecture candidate best match the quality requirements of the system[1]. 
+
+#####Reference
+
+[1] M. Svahnberg, “An Industrial Study on Building Consensus Around Software Architectures and Quality Attributes,” Information and Software Technology, vol. 46, no. 12, pp. 805–818, 2004.
+
+[2] Koen Yskout, (supervisors: Wouter Joosen, Riccardo Scandariato), “Connecting Security Requirements and Software Architecture with Patterns (Beveiligingsvereisten en softwarearchitectuur verbinden met patronen)”, Ph.D. Thesis, 19 April 2013
+
+#### Can you connect all requirements directly? What do you do if you cannot? 
+
+In market-driven development, requirements are usually generated from a variety of sources, including internal (e.g., engineers to management) and external (e.g., customers and partners)[3]. As the source of the requirements is diversified, and the requirements themselves are both direct and indirect sources, it is not surprising that they have different shapes and forms, multiple levels of abstraction, and described on varying levels of refinement[3]. 
+
+Because there are many different types and levels of requirements, so we cannot directly connect all the requirements. RAM is a requirement abstraction model that can be used to abstract requirements to complete the requirement's connection. RAM can abstract requirements in the same abstract level and they can be compared and set against one another. All the requirements can get a richer understanding through the abstract process. 
+
+#####Reference
+[3]T. Gorschek and C. Wohlin, “Requirements Abstraction Model,” Requirements Eng, vol. 11, no. 1, pp. 79–101, Nov. 2005.
 
 ####–  Regnell & Brinkkemper “Market-Driven Requirements Engineering for Software Products” (Chapter 13 in Engineering and Management of Software Requirements)  
 
