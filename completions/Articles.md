@@ -230,7 +230,7 @@ As another example of a systematic technique, Grünbacher et al. [Extraordinary 
 
 More recently, Pimentel [PLC+12] proposed a process for generating architecture models (expressed in the Acme language) from requirements model (expressed in i*), specifically adaptive systems[2]. The method is based on the STREAM [Luc10], and there are several methods proposed to assist architects in transitioning from requirements to an architecture, or even (partially) automating this step[2].
 
-M. Svahnberg said the PQA is used together with the FQA(Framework for Quality Attribute) and the FAS(Framework for Architecture Structure) to evaluate which architecture candidate best match the quality requirements of the system[1]. 
+M. Svahnberg said that PQA can be used together with the FQA(Framework for Quality Attribute) and the FAS(Framework for Architecture Structure) to evaluate which architecture candidate best match the quality requirements of the system[1]. 
 
 #####Reference
 
