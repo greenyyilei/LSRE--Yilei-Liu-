@@ -1,59 +1,35 @@
 ###•	What is large scale requirements engineering? 
 The project that has less than 1000 requirements[10]. The project has a complex structure and a variety of sources of requirements. 
-###•	What are the challenges in large scale requirements engineering? 
-Large number of customer requirements takes challenges for analysing, specifying, and managing requirements. To mitigate this challenge, we can develop a well-structured feature list and make a good understanding of customer requirements [8].
-Formal communication and interface to customer. The large number of customer requirements make understanding the various aspects of the software very challenging. In order to mitigate this challenge, clarify customer requirements in the early stage of the development process is very important[8]. 
-Science the project spanned several years, technology changed during the time. To mitigate this challenge, we can separate the requirements and design decisions[8]. 
-Project teams were distributed geographically and often leads to issues of coordination and communication. To mitigate this challenge, we can provide simple visualisations which provide meaning information of the project status to make members identifying issues quickly and taking corrective action early[8].
-In long-term projects, resource fluctuation is a challenge. We can establish effective documentation standards and review process to mitigate this challenge[8].
-Requirements elicitation, classification, prioritization, and prediction are all challenges in LSRE[9].
 
-###•	What is the order of magnitude of the number of requirements we are discussing? 
-This following shown four orders of magnitude of the number of requirements based on the size of the set of requirements[10] .
+#####Reference
 
-SSRE： Small-Scale Requirements Engineering   	       ~10 requirements 
-
-MSRE：    Medium-Scale Requirements Engineering 	    ~ 100 requirements 
-
-LSRE：	   Large-Scale Requirements Engineering 	      ~1000 requirements 
-
-VLSRE：	   Very Large-Scale Requirements Engineering 	  ~10000 requirements 
-
-
-###•	Read and summarise 
-####“The art and science of release planning”
-A good release plan should provide maximum business value, satisfy the most important stakeholders, use the available resources and present the existing dependencies between features. There are two approach for release planning. The are of RP realise on human intuition, communication and the capabilities to coordinate between conflicting goals and constraints. The science of RP formalizes the problem and use computational algorithms to make best solutions. But they all have disadvantage. The art-based approach can not deal with the RP problem’s complexity as the number of factors grows. The science-based approach can not consider the problem from the human decision maker’s view. The hybrid approach is in a high-level framework for release planning. Firstly, modelling to make it suitable for computational intelligence based techniques. Secondly, exploration. We will generate the solution plan based on the formal model and developed integer programming algorithms to explore the spoliation space and find the alternative solution. Thirdly, consolidation the result. The decision maker will evaluates the alternative solution of the  algorithms based on the experience and the problem context. 
-
-
+[10] B. Regnell, R. B. Svensson, and K. Wnuk, “Can We Beat the Complexity of Very Large-Scale Requirements Engineering?,” in Requirements Engineering: Foundation for Software Quality, B. Paech and C. Rolland, Eds. Springer Berlin Heidelberg, 2008, pp. 123–128.
 
 ####“Introducing support for release planning of quality requirements–an industrial evaluation of the QUPER model” 
-   This paper is an industrial evaluation of the QUPER model used at Sony Ericsson. First we introduce the QUPER model and then based on the situation of the company, tailoring  the QUPER model. Sony Ericsson has a global market and more than 20,000 requirements. The aim of this paper is introduce the QUPER model and evaluate it   based on this case. The goal of this model is solve the constraints between quality and cost and provides helpful information of quality requirements in release planning. As a supplement of cost and value, the QUPER model has a third dimension related to quality which used to prioritise the functional requirements. Quality performance (QUPER) model has several steps: 1) define the quality indicators 2) define current market expectations. In this step, we will estimate the breakpoints and carries for the benefit view and cost view. 3) identify the quality level of reference products. 4) estimate targets for future release. 5) create roadmaps. 6) revise and update roadmaps. 
-The QUPER model has three views that can help the companies understand better of the necessary requirements of their products.
-The benefit view: there are three breakpoints that show the main changes in the benefit level. The utility breakpoint marks the border of quality from useless to useful. The differentiation breakpoint marks the level of the quality is in a competitive position. The saturation breakpoint marks the product is excessive that higher quality level has no practical impact on benefit. 
-The cost view includes cost barriers that present the non-liner relationship between quality and cost. A barrier occurs when the quality cost shift from a low level to a high level. 
-The roadmap view combine the first two views by putting the breakpoints and carries in the same scale. The goal of this view is to compare the quality of our product and the competitor’s and make some targets for the future releases. 
-The result shown that the QUPER model can support prioprtization and roadmapping  when making high-level decision-making  for quality requirements at early stages of release planing. The challenge in definition is difficult to define and specify the value for the differentiation and saturation breakpoints. 
+This paper is an industrial evaluation of the QUPER model used at Sony Ericsson. First we introduce the QUPER model and then based on the situation of the company, tailoring  the QUPER model. Sony Ericsson has a global market and more than 20,000 requirements. The aim of this paper is introduce the QUPER model and evaluate it   based on this case. The goal of this model is solve the constraints between quality and cost and provides helpful information of quality requirements in release planning. As a supplement of cost and value, the QUPER model has a third dimension related to quality which used to prioritise the functional requirements. Quality performance (QUPER) model has several steps: 1) define the quality indicators 2) define current market expectations. In this step, we will estimate the breakpoints and carries for the benefit view and cost view. 3) identify the quality level of reference products. 4) estimate targets for future release. 5) create roadmaps. 6) revise and update roadmaps. 
 
+The QUPER model has three views that can help the companies understand better of the necessary requirements of their products.
+
+The benefit view: there are three breakpoints that show the main changes in the benefit level. The utility breakpoint marks the border of quality from useless to useful. The differentiation breakpoint marks the level of the quality is in a competitive position. The saturation breakpoint marks the product is excessive that higher quality level has no practical impact on benefit. 
+
+The cost view includes cost barriers that present the non-liner relationship between quality and cost. A barrier occurs when the quality cost shift from a low level to a high level. 
+
+The roadmap view combine the first two views by putting the breakpoints and carries in the same scale. The goal of this view is to compare the quality of our product and the competitor’s and make some targets for the future releases. 
+
+The result shown that the QUPER model can support prioprtization and roadmapping  when making high-level decision-making  for quality requirements at early stages of release planing. The challenge in definition is difficult to define and specify the value for the differentiation and saturation breakpoints. 
 
 ####“A case study evaluation of the guideline-supported QUPER model for elicitation of quality requirements”
 This paper is a case study of the QUPER model. It presents the detailed practical guidelines of how to use QUPER and added introduction of how to incorporate cost dependencies between QR. And then, they use the detailed guidelines to evaluate QUPER’s applicability with real QR. It also discussed how to define the breakpoints and barriers and the different important level of the three levels. 
+
 This section shown the practical guidelines of QUPER. 1) Identify candidate QR which considered relevant features, market segment, competitor and hardware platform capability. 2) For each selected QR, define a scale and a measurement unit to express the level of quality of QR. 3) Identify reference levels for each QR based on actual products. 4) Define market expectations to elicit quality breakpoints. 5) Estimate the cost in terms of the cost barriers. 6) Propose candidate requirements, discuss and decide actual requirements for the coming release. 7) If cost dependencies between QR are considered important for cost estimations, identify which module needs to be changed if that QR will be improved beyond the “next” breakpoint.
+
 The evaluation shows that the QUPER model is easy to understand, improves the understanding of QR,  and doesn’t take too much time to apply in practice. In the three views, roadmap view is the most important view, benefit view may be helpful for specifying QR, and cost view is the least important view. 
 
-
-
-
-#####Reference
-[8] S. Konrad and M. Gall, “Requirements Engineering in the Development of Large-Scale Systems,” in 16th IEEE International Requirements Engineering, 2008. RE ’08, 2008, pp. 217–222.
-
-[9] Safwat and M. B. Senousy, “Addressing Challenges of Ultra Large Scale System on Requirements Engineering,” Procedia Computer Science, vol. 65, pp. 442–449, 2015.
-
-[10] B. Regnell, R. B. Svensson, and K. Wnuk, “Can We Beat the Complexity of Very Large-Scale Requirements Engineering?,” in Requirements Engineering: Foundation for Software Quality, B. Paech and C. Rolland, Eds. Springer Berlin Heidelberg, 2008, pp. 123–128.
 
 ####Read up on GAP / CVA / IVA Analysis!
 #####GAP Analysis[3][4][5]
 
-A gap analysis is a method that assessing the difference between actual performance with the potential or desired performance. Gap refers to a requirements analysis, requirements assessment or requirement-gap analysis. In software development, gap analysis can show which requirements are missing, which are delete and which are still need to be development. Gap analysis is task that requirements managers perform in order to ensure the scheduled product functions are covered by the appropriate platform project[4]. The goal of GAP analysis is to ensure the misalignments between market requirements and supplier requirements are addressed[4]. 
+A gap analysis is a method of assessing the difference between actual performance with the potential or expected performance.  Gap refers to a requirements analysis, requirements assessment or requirement-gap analysis. In software development, gap analysis can show which requirements are missing, which are delete and which are still need to be development. Gap analysis is task that requirements managers perform in order to ensure the scheduled product functions are covered by the appropriate platform project[4]. The goal of GAP analysis is to ensure the misalignments between market requirements and supplier requirements are addressed[4]. 
 
 The first step to conducting a gap analysis is to establish a specific target objective. The next step is to analyze the current processes by collecting relevant data. The last step, after comparing the current state with the potential goals, draw a comprehensive plan for future develops. 
 
@@ -86,7 +62,7 @@ Customer value is created by[6]:
 
 2. Based on the most attention factors, proposing a value proposition that you are able to provide.
 
-3. Setting product pricing at a level commensurate with the level of perceived value provided.
+3. Setting product pricing that is equivalent to the perceived value provided.
 
 The conjoint analysis tools can be used to complete the CVA analysis[3].
 
@@ -193,9 +169,7 @@ Technical Product Manager Don’t’s[11]:
 
 A roadmap draws a timeline of what things will happen, combined with different aspects of product strategies, such as commercial and technological[14]. In other words, the product roadmap can be used to maintain attention on the long-term intentions, which are often defined at a high level (organizational strategies), as well as keeping the focus on the right issues that reflect these intentions (product strategies)[14]. The aspects of markets, products and technology can be included in a roadmap and are usually use a time-based chart to represent these activities when it will happen in the lifecycle[14]. Since the roadmap is built upon a long-term perspective, among others, marketing information it is important to frequently update and review these[14]. 
 
-The literature provides many types of roadmap documents, (Schalken et al. 2001) where the one suitable for MDRE contexts release planning is the Product-Technology Roadmap[15]. Roadmapping is a complex task, and it brings challenges in cooperation between different levels of product development, continuous communication (R. E. Albright 2003), dependencies handling between related products, and coping with rapid technology changes (Carmel 1999)[15].
-
-Developing a roadmap has three main purposes[12]. It helps reach a consensus comprising a series of requirements and the technologies required to satisfy those requirements, it provides a mechanism that can help predict the development of technology, and it provides a framework to help plan and coordination of technical development [13].
+There are many types of roadmaps. Product-Technology Roadmap is suitable for MDRE[15]. Developing a roadmap has three main purposes[12]. It helps reach a consensus comprising a series of requirements and the technologies required to satisfy those requirements, it provides a mechanism that can help predict the development of technology, and it provides a framework to help plan and coordination of technical development [13].
 
 In my opinion, to do large-scale product roadmap needs to consider many factors, including product attributes, the dependency between product characteristics, product cycle, the characteristics of competitors, market value, market share and other factors. Because the complexity of large-scale products is very high, so the mutual influence between the characteristics of the product is very large. Based on [16], self-awareness and self-adaptation have become primary concerns in large-scale systems, we can conclude that modeling dependencies between resources, goals, and activities increase system efficiency and effectiveness will make the expected results can be predicted more precisely.
 
@@ -207,7 +181,7 @@ In my opinion, to do large-scale product roadmap needs to consider many factors,
 
 [14] A. Gomes–andrigo, A. Pettersson, and T. Gorschek–tony, “Market-Driven Requirements Engineering Process Model–MDREPM,” 2007, version 1.0.”
 
-[15] K. Wnuk, “Understanding and supporting large-scale requirements management,” LU-CS-LIC, vol. 2010, 2010.
+[15] K. Wnuk, “Understanding and supporting large-scale requirements management,” LU-CS-LIC, vol. 2010.
 
 [16] S. Dustdar, C. Dorn, F. Li, L. Baresi, G. Cabri, C. Pautasso, and F. Zambonelli, “A Roadmap Towards Sustainable Self-aware Service Systems,” in Proceedings of the 2010 ICSE Workshop on Software Engineering for Adaptive and Self-Managing Systems, New York, NY, USA, 2010, pp. 10–19.
 
