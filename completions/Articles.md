@@ -93,7 +93,7 @@ All the three tools help the company choose between products and keep a balance 
 
 #####– Try one out (build something, have it run tests automatically, . . . ), and write up your experiences. 
 
-In software engineering, continuous integration (CI) is the practice of merging all developer working copies to a shared mainline several times a day[9].
+In software engineering, Continuous Integration (CI) is the practice of consolidating copies of all developer work multiple times a day into a shared mainline [9].
 
 The features of Continuous Integration 
 
@@ -108,11 +108,11 @@ The following are two tools for CI:
 ######Jenkins[8]
 
 Jenkins is focused on two major jobs: building/testing software projects continuously and monitoring externally-run jobs. 
-Jenkins is available as a service from third-party vendors. But if you have a big list of software releases need to be tested, it may be better to run it on your own server. It not only gives the infrastructure issue full control but also help for companies worried about  software security.
+Jenkins is a service from third-party vendors. But if you have a big list of software need to be tested, it may be better to run it on your own server. It not only gives the infrastructure issue full control but also help for companies worried about  software security.
 
 ######Buildbot[8]
 
-Buildbot is developed in Python and based on the Twisted framework. It began as an alternative to the Tinderbox project and is now used in Mozilla, Webkit, Chromium, and others. The ideology behind this setup is that most CI tools have a fixed fundamental design and limited to the basic design tools envisaged by the author. But use cases, such as mixed-language applications or complex release tasks, may have those assumptions to be violated. Buildbot design allows your installation to grow with your requirements, begin with a simple process to meet your unique needs.
+Buildbot is developed in Python and based on the Twisted framework. It began as an alternative to the Tinderbox project. Now it is used in Mozilla, Webkit, Chromium, and others. The ideology behind this setup is that most CI tools have a fixed fundamental design and limited to the basic design tools envisaged by the author. But use cases may have those assumptions to be violated. Buildbot's design allows your installation to change with your requirements, begin with a simple process to meet your unique needs.
 
 Travis CI, Strider, and Integrity are all common tools for continuous integration. 
 
@@ -132,6 +132,7 @@ Support third-party plug-ins: Jenkins also provides a wealth of plug-in support,
 
 #####Reference
 [8] “6 top continuous integration tools,” Opensource.com. [Online]. Available: https://opensource.com/business/15/7/six-continuous-integration-tools.
+
 [9] “Continuous integration,” Wikipedia, the free encyclopedia. 31-Aug-2016.
 
 ####What is technical product management?
@@ -140,7 +141,7 @@ Gap between Management and Technical Management[10]
 
 Requirements can be seen as the-least-common-denominator on which decisions affecting what to include in the product offering is decided. This makes communication between management and technical management important. All parties should be able to participate in the decision-making process from the early triage to the final selection. In addition, all parties have a lot of requirements in their own sources. Due to these reasons, the process MDRE needs to provide decision support material, multiple roles, to encourage and support cooperation and joint work.
 
-In reality, the term Technical Product Manager describes a person, rather than a role. Specifically, it describes a product manager who has a technical background and working in a technical product. It does not describe a product manager who needs to implement technical tasks, such as software architecture design and coding. They did not actually develop the product, they just closing the coordination in the software development team as a product manager[11].
+In reality, the term Technical Product Manager describes a person, rather than a role. It does not describe a product manager who needs to implement technical tasks, such as software architecture design and coding. They did not actually develop the product, they just closing the coordination in the software development team as a product manager[11].
 
 Technical Product Manager Do’s[11]:
 
@@ -156,7 +157,6 @@ Technical Product Manager Don’t’s[11]:
 
 2. Don’t take on non-Product Management deliverables.
 
-3. Don’t get caught up in Agile, or whatever methodology you’re using.
 
 #####Reference
 
@@ -214,7 +214,7 @@ M. Svahnberg said that PQA can be used together with the FQA(Framework for Quali
 
 #### Can you connect all requirements directly? What do you do if you cannot? 
 
-In market-driven development, requirements are usually generated from a variety of sources, including internal (e.g., engineers to management) and external (e.g., customers and partners)[3]. As the source of the requirements is diversified, and the requirements themselves are both direct and indirect sources, it is not surprising that they have different shapes and forms, multiple levels of abstraction, and described on varying levels of refinement[3]. 
+In market-driven development, requirements are usually generated from a variety of sources, including internal (e.g., engineers to management) and external (e.g., customers and partners)[3]. As the source of the requirements is diversified, and the requirements themselves are both direct and indirect sources, , it is normal that they have different forms and multiple levels of abstraction, and described on varying levels of refinement[3]. 
 
 Because there are many different types and levels of requirements, so we cannot directly connect all the requirements. RAM is a requirement abstraction model that can be used to abstract requirements to complete the requirement's connection. RAM can abstract requirements in the same abstract level and they can be compared and set against one another. All the requirements can get a richer understanding through the abstract process. 
 
@@ -338,7 +338,7 @@ RQ4: What methods exist, in industry practice, that help to identify obsolete so
 More than 50% of the respondents proposed that manual ways of discovering OSRs are the main method. At the same time, demographic factors have no significant impact on this question. OSRs identification is mainly a manual activity, less than 10% of the respondents said they have any automatic functionality.
 
 RQ5: When OSRs are identified, how are they typically handled in industry? 
-When considering existing processes and practices for managing OSRs, 73.6% of respondents said they did not consider the needs for manage OSRs during their requirements engineering process. At the same time, 73.6% of respondents said they did not have any procedure to deal with OSRs. This result can be used as clear evidence of a lack of industry-related OSR processing method, and confirms the need for developing methods for managing OSRs. According to the survey answers, more than 60% of respondents think that the identified OSRs should be kept in the requirements document or database, but marked as obsolete. Removing OSRS is an undesirable behaviour.
+For managing OSRs, there are some existing processes and practices. When considering this, 73.6% of respondents said they did not consider the needs for manage OSRs during their requirements engineering process. At the same time, 73.6% of respondents said they did not have any procedure to deal with OSRs. This result can be used as clear evidence of a lack of industry-related OSR processing method, and confirms the need for developing methods for managing OSRs. According to the survey answers, more than 60% of respondents think that the identified OSRs should be kept in the requirements document or database, but marked as obsolete. Removing OSRS is an undesirable behaviour.
 
 RQ6: What context factors, such as project size or domain, influence OSRs? 
 The result indicates that the larger the projects, the more likely to have a negative impact from OSRs. OSRs are more likely to affect large-scale project requirements and very large-scale requirements projects.
