@@ -5,18 +5,6 @@ The project that has less than 1000 requirements[10]. The project has a complex 
 
 [10] B. Regnell, R. B. Svensson, and K. Wnuk, “Can We Beat the Complexity of Very Large-Scale Requirements Engineering?,” in Requirements Engineering: Foundation for Software Quality, B. Paech and C. Rolland, Eds. Springer Berlin Heidelberg, 2008, pp. 123–128.
 
-####“Introducing support for release planning of quality requirements–an industrial evaluation of the QUPER model” 
-This paper is an industrial evaluation of the QUPER model used at Sony Ericsson. First we introduce the QUPER model and then based on the situation of the company, tailoring  the QUPER model. Sony Ericsson has a global market and more than 20,000 requirements. The aim of this paper is introduce the QUPER model and evaluate it   based on this case. The goal of this model is solve the constraints between quality and cost and provides helpful information of quality requirements in release planning. As a supplement of cost and value, the QUPER model has a third dimension related to quality which used to prioritise the functional requirements. Quality performance (QUPER) model has several steps: 1) define the quality indicators 2) define current market expectations. In this step, we will estimate the breakpoints and carries for the benefit view and cost view. 3) identify the quality level of reference products. 4) estimate targets for future release. 5) create roadmaps. 6) revise and update roadmaps. 
-
-The QUPER model has three views that can help the companies understand better of the necessary requirements of their products.
-
-The benefit view: there are three breakpoints that show the main changes in the benefit level. The utility breakpoint marks the border of quality from useless to useful. The differentiation breakpoint marks the level of the quality is in a competitive position. The saturation breakpoint marks the product is excessive that higher quality level has no practical impact on benefit. 
-
-The cost view includes cost barriers that present the non-liner relationship between quality and cost. A barrier occurs when the quality cost shift from a low level to a high level. 
-
-The roadmap view combine the first two views by putting the breakpoints and carries in the same scale. The goal of this view is to compare the quality of our product and the competitor’s and make some targets for the future releases. 
-
-The result shown that the QUPER model can support prioprtization and roadmapping  when making high-level decision-making  for quality requirements at early stages of release planing. The challenge in definition is difficult to define and specify the value for the differentiation and saturation breakpoints. 
 
 ####“A case study evaluation of the guideline-supported QUPER model for elicitation of quality requirements”
 This paper is a case study of the QUPER model. It presents the detailed practical guidelines of how to use QUPER and added introduction of how to incorporate cost dependencies between QR. And then, they use the detailed guidelines to evaluate QUPER’s applicability with real QR. It also discussed how to define the breakpoints and barriers and the different important level of the three levels. 
@@ -185,16 +173,6 @@ In my opinion, to do large-scale product roadmap needs to consider many factors,
 
 [16] S. Dustdar, C. Dorn, F. Li, L. Baresi, G. Cabri, C. Pautasso, and F. Zambonelli, “A Roadmap Towards Sustainable Self-aware Service Systems,” in Proceedings of the 2010 ICSE Workshop on Software Engineering for Adaptive and Self-Managing Systems, New York, NY, USA, 2010, pp. 10–19.
 
-####	–  Gorschek & Davis “Requirements Engineering. In search of dependent variables” 
-
-This paper provides a taxonomy of levels to assess the impact of the requirement process changing on many dependent variables. These dependent variables are divided into five levels. 
-
-Requirements phase: it is the commonly used measure among companies to improve their requirements process. It includes the dependent variables relate to requirements cost and time, and the requirements quality. It may be measured in its outputs and its activity. The requirements phase is the easiest measured one in the five levels. 
-
-Project: it is often measured about whether the project was completed on time, within the budget, and did it meet the requirements, how many of the documented requirements were actually implemented. It includes dependent variables: project cost and time, project estimates and the degree of requirements change. At this level, there is four requirement-related cause exist for a project’s success or fail. They are 1) poor estimation techniques; 2) mismatch between requirements specified and requirements satisfied; 3) evolving requirements; 4) mismanagement. 
-
-Product: the dependent variables in this level determine the degree of product success. It includes measures related to requirements selection and the degree of impact. What requirements are selected to realize is very important for the successful of a product. At this level, two issues are directly responsible for success or fail. They are requirements selection and product strategies. Actually they are relevant to whether the product make money. Selected the right requirements from the customer perspective and meet customer expectations will have strong impact on the market success. 
-
 
 ####How do you connect your requirements to your architecture?
 
@@ -278,8 +256,6 @@ Portfolio Level[4]: PPM is the core part in Strategy, Investment Funding, Progra
 Program Level: SAFe defines an Agile Release Train(ART) to program. The ART is the main instrument for value delivery at the program level which delivers a value stream for the organization[2]. 5 and 10 teams work together and synchronise their release boundaries and iteration boundaries[2][3].  Every 5 iterations, a train delivers a Potentially Shippable Increment(PSI) and held a demo, inspect and adapt seminars and plan for the next PSI[2]. In this level, new roles are defined. In the IT/PMI environments, the program manager may have more than one roles. If they have domain expertise, they can fill the product manager role. The product manager who defines and priorities the program backlog has content authority at this level. SAFe defines an artifact hierarchy of Epics-Features-User Stories. The program backlog is features prioritised list. Features can generate at the Program level or derive from Epics defined at the Portfolio level[2]. The system architect has design authority at this level. He work with teams day by day to ensure the non-functional requirements are met. He also works with the enterprise architect to ensure there are enough architectural runway to support the upcoming user and business needs at the Portfolio level[2].  The UX Designers provide UI design, UX guidelines and design elements for teams. The Release Train Engineering is the Uber-ScrumMaster. The Release Management Team is a cross-functional team that approves frequent releases of quality solution to customers[2].
 
 Team Level: This level works with traditional agile methods but the team meeting are synchronised. Define/Build/Test teams deliver working and the sprint is also fixed as two weeks[2]. Scrum has many events, sprint planing, sprint review and sprint retrospective, SAFe also add an event called “release planning” meeting to synchronise teams after each five iterations[1]. This meeting is essential for SAFe in order to reduce the coordination overhead between teams, conduct a common direction of all members, and reduce the risks[1]. 
-
-Program and Team Level are work together on the same value stream. 
 
 #####Reference
 [1] R. Brenner and S. Wunder, “Scaled Agile Framework: Presentation and real world example,” in 2015 IEEE Eighth International Conference on Software Testing, Verification and Validation Workshops (ICSTW), 2015, pp. 1–2.
