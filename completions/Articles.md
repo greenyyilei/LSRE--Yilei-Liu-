@@ -22,17 +22,17 @@ A gap analysis is a method of assessing the difference between actual performanc
 The first step to conducting a gap analysis is to establish a specific target objective. The next step is to analyze the current processes by collecting relevant data. The last step, after comparing the current state with the potential goals, draw a comprehensive plan for future develops. 
 
 In the gap analysis template, it has the following components:
-1. Identify the current and future states. 
+1. Defines the current and expected state. 
 
 2. Describe the gap
 
-3. Bridging the gap. 
+3. Narrow and improve the gap. 
 
 There are some pro and con of GAP analysis.
 
 Advantage: 
 
-Organization overview: a GAP analysis can provide a comprehensive overview of the product. The overview helps the organization identify gaps, analyze the reasons that led to the current position. Establish the priorities of the requirements. 
+Organization overview: a GAP analysis can provide a comprehensive overview of the product. This summary helps organizations define gaps and analyze the causes of the gaps. Establish the priorities of the requirements. 
 
 Disadvantage:
 
@@ -95,18 +95,18 @@ The following are two tools for CI:
 
 ######Jenkins[8]
 
-Jenkins is focused on two major jobs: building/testing software projects continuously and monitoring externally-run jobs. 
+Jenkins has two main tasks: building/testing software projects continuously and monitoring externally-run jobs. 
 Jenkins is a service from third-party vendors. But if you have a big list of software need to be tested, it may be better to run it on your own server. It not only gives the infrastructure issue full control but also help for companies worried about  software security.
 
 ######Buildbot[8]
 
-Buildbot is developed in Python and based on the Twisted framework. It began as an alternative to the Tinderbox project. Now it is used in Mozilla, Webkit, Chromium, and others. The ideology behind this setup is that most CI tools have a fixed fundamental design and limited to the basic design tools envisaged by the author. But use cases may have those assumptions to be violated. Buildbot's design allows your installation to change with your requirements, begin with a simple process to meet your unique needs.
+Buildbot is developed in Python and based on the Twisted framework. It began as an alternative to the Tinderbox project. Now it is used in Mozilla, Webkit, Chromium, and others. The ideology behind this setup is that most CI tools have a fixed fundamental design and limited to the basic design tools envisaged by the author. But use cases may have those assumptions to be violated.The Buildbot’s design allows the installation to change as the requirements change, meeting your unique needs with a simple process.
 
 Travis CI, Strider, and Integrity are all common tools for continuous integration. 
 
 ######My experiences of using Jenkins: 
 
-Easy to install: Jenkins installation is very simple. We only need to download the latest jenkins.war files from the Jenkins home page and then run java -jar jenkins.war. We don’t  need additional installation and install the database;
+Easy to install: We only need to download the latest jenkins.war files from the Jenkins home page and then run java -jar jenkins.war. We don’t  need additional installation and install the database;
 
 Easy to configure: Jenkins provides rich management and configuration functions, including system configuration, management plug-in, view system information, system log, node management, Jenkins command line window, information statistical and other functions. When I tried it, I found Jenkins very useful.
 
@@ -127,7 +127,7 @@ Support third-party plug-ins: Jenkins also provides a wealth of plug-in support,
 
 Gap between Management and Technical Management[10]
 
-Requirements can be seen as the-least-common-denominator on which decisions affecting what to include in the product offering is decided. This makes communication between management and technical management important. All parties should be able to participate in the decision-making process from the early triage to the final selection. In addition, all parties have a lot of requirements in their own sources. Due to these reasons, the process MDRE needs to provide decision support material, multiple roles, to encourage and support cooperation and joint work.
+Requirements can be seen as the-least-common-denominator on which decisions affecting what to include in the product offering is decided. This makes communication between management and technical management important. All parties should participate in the decision-making process from the early triage to the final selection. In addition, all parties have a lot of requirements in their own sources. Due to these reasons, the process MDRE needs to provide decision support material, multiple roles, to encourage and support cooperation and joint work.
 
 In reality, the term Technical Product Manager describes a person, rather than a role. It does not describe a product manager who needs to implement technical tasks, such as software architecture design and coding. They did not actually develop the product, they just closing the coordination in the software development team as a product manager[11].
 
@@ -155,7 +155,7 @@ Technical Product Manager Don’t’s[11]:
 
 ####• What is roadmapping? How can you do it large scale? 
 
-A roadmap draws a timeline of what things will happen, combined with different aspects of product strategies, such as commercial and technological[14]. In other words, the product roadmap can be used to maintain attention on the long-term intentions, which are often defined at a high level (organizational strategies), as well as keeping the focus on the right issues that reflect these intentions (product strategies)[14]. The aspects of markets, products and technology can be included in a roadmap and are usually use a time-based chart to represent these activities when it will happen in the lifecycle[14]. Since the roadmap is built upon a long-term perspective, among others, marketing information it is important to frequently update and review these[14]. 
+A roadmap draws a timeline of what things will happen, combined with different aspects of product strategies, such as commercial and technological[14]. In other words, the product roadmap can be used to maintain attention on the long-term intentions, which are often defined at a high level (organizational strategies), as well as keeping the focus on the right issues that reflect these intentions (product strategies)[14]. The aspects of markets, products and technology can be included in a roadmap and are usually use a time-based chart to represent these activities when it happens in the lifecycle[14]. Since the roadmap is built upon a long-term perspective, among others, marketing information it is important to frequently update and review these[14]. 
 
 There are many types of roadmaps. Product-Technology Roadmap is suitable for MDRE[15]. Developing a roadmap has three main purposes[12]. It helps reach a consensus comprising a series of requirements and the technologies required to satisfy those requirements, it provides a mechanism that can help predict the development of technology, and it provides a framework to help plan and coordination of technical development [13].
 
@@ -178,8 +178,6 @@ In my opinion, to do large-scale product roadmap needs to consider many factors,
 
 Various approaches have been proposed to assist architects in transitioning from requirements to an architecture, or even (partially) automate this step[2]. They defined a more systematic technique[2]. They describe a method to transform the KAOS requirements model into a so-called Architectural Prescription Language (APL) specification, which is a high-level architectural model[2].
 
-As another example of a systematic technique, Grünbacher et al. [Extraordinary General Meeting, GEM04] propose to use an intermediate model (called CBSP) for the requirements that have been mapped[2]. The intermediate model includes a set of architectural concepts such as components, buses (connectors), system-wide functionality, and properties of each of these, but still remains close to the system's requirements[2]. The creation of the intermediate model is guided through five steps. Using this intermediate model, the gap between requirements and architecture is reduced, and non-functional requirements can be explicitly modeled[2].
-
 More recently, Pimentel [PLC+12] proposed a process for generating architecture models (expressed in the Acme language) from requirements model (expressed in i*), specifically adaptive systems[2]. The method is based on the STREAM [Luc10], and there are several methods proposed to assist architects in transitioning from requirements to an architecture, or even (partially) automating this step[2].
 
 M. Svahnberg said that PQA can be used together with the FQA(Framework for Quality Attribute) and the FAS(Framework for Architecture Structure) to evaluate which architecture candidate best match the quality requirements of the system[1]. 
@@ -192,9 +190,9 @@ M. Svahnberg said that PQA can be used together with the FQA(Framework for Quali
 
 #### Can you connect all requirements directly? What do you do if you cannot? 
 
-In market-driven development, requirements are usually generated from a variety of sources, including internal (e.g., engineers to management) and external (e.g., customers and partners)[3]. As the source of the requirements is diversified, and the requirements themselves are both direct and indirect sources, , it is normal that they have different forms and multiple levels of abstraction, and described on varying levels of refinement[3]. 
+In market-driven development, requirements are usually generated from a variety of sources like internal (engineers) and external (partners and customers)[3]. As the source of the requirements is diversified, and the requirements themselves are both direct and indirect sources, it is very common for them to have different forms and multiple levels of abstraction, and described on varying levels of refinement[3]. 
 
-Because there are many different types and levels of requirements, so we cannot directly connect all the requirements. RAM is a requirement abstraction model that can be used to abstract requirements to complete the requirement's connection. RAM can abstract requirements in the same abstract level and they can be compared and set against one another. All the requirements can get a richer understanding through the abstract process. 
+Because there are many different levels and forms of requirements, so we cannot directly connect all the requirements. RAM is a requirement abstraction model that can be used to abstract requirements to complete the requirement's connection. RAM can abstract requirements in the same abstract level and they can be compared and set against one another. All the requirements can get a richer understanding through the abstract process. 
 
 #####Reference
 [3]T. Gorschek and C. Wohlin, “Requirements Abstraction Model,” Requirements Eng, vol. 11, no. 1, pp. 79–101, Nov. 2005.
@@ -247,27 +245,11 @@ Released: The requirements will get the status Released when all the activities 
 
 The requirements repository is used to store the relevant attributes of candidate requirements. Smaller project will need a simple spreadsheet and large-scale project will need requirements management tool due to the volume of requirements. 
 
-####		–  D. Leffingwell “Scaled Agile Framework” (Note, there is no good article on this, but his webpage provides some help).  Scrum become very popular in software development team, but is doesn’t describe how large project can scale or how manager in program level or portfolio level will handle their requirements together with agile teams[1]. Dean Leffingwell created the Scale Agile Framework(SAFe) to apply agile methodologies to the whole companies. SAFe is based on Lean and Agile principles[2]. 
-
-SAFe proposes three levels[1][2][3][4]: 
-
-Portfolio Level[4]: PPM is the core part in Strategy, Investment Funding, Program Management and Governance.  Epics define large development initiatives that encapsulate the new development necessary to realise the benefits of the investment themes which drive the budget allocations[2]. Portfolio philosophy is the centralised strategy with local execution.   
-
-Program Level: SAFe defines an Agile Release Train(ART) to program. The ART is the main instrument for value delivery at the program level which delivers a value stream for the organization[2]. 5 and 10 teams work together and synchronise their release boundaries and iteration boundaries[2][3].  Every 5 iterations, a train delivers a Potentially Shippable Increment(PSI) and held a demo, inspect and adapt seminars and plan for the next PSI[2]. In this level, new roles are defined. In the IT/PMI environments, the program manager may have more than one roles. If they have domain expertise, they can fill the product manager role. The product manager who defines and priorities the program backlog has content authority at this level. SAFe defines an artifact hierarchy of Epics-Features-User Stories. The program backlog is features prioritised list. Features can generate at the Program level or derive from Epics defined at the Portfolio level[2]. The system architect has design authority at this level. He work with teams day by day to ensure the non-functional requirements are met. He also works with the enterprise architect to ensure there are enough architectural runway to support the upcoming user and business needs at the Portfolio level[2].  The UX Designers provide UI design, UX guidelines and design elements for teams. The Release Train Engineering is the Uber-ScrumMaster. The Release Management Team is a cross-functional team that approves frequent releases of quality solution to customers[2].
-
-Team Level: This level works with traditional agile methods but the team meeting are synchronised. Define/Build/Test teams deliver working and the sprint is also fixed as two weeks[2]. Scrum has many events, sprint planing, sprint review and sprint retrospective, SAFe also add an event called “release planning” meeting to synchronise teams after each five iterations[1]. This meeting is essential for SAFe in order to reduce the coordination overhead between teams, conduct a common direction of all members, and reduce the risks[1]. 
-
-#####Reference
-[1] R. Brenner and S. Wunder, “Scaled Agile Framework: Presentation and real world example,” in 2015 IEEE Eighth International Conference on Software Testing, Verification and Validation Workshops (ICSTW), 2015, pp. 1–2.
-[2]  “41 Things You Need to Know about the Scaled Agile Framework® (SAFe) | Rally Software Blog.” [Online]. Available: https://www.rallydev.com/blog/agile/41-things-you-need-know-about-scaled-agile-framework-safe.		
-[3] “Program Level – Scaled Agile Framework.” [Online]. Available: http://www.scaledagileframework.com/program-level/.
-[4] “Portfolio Level – Scaled Agile Framework.” [Online]. Available: http://www.scaledagileframework.com/portfolio-level/.
-
 ####–  Wnuk et al. “Are You Biting Off More Than You Can Chew? A Case Study on Causes and Effects of Overscoping in Large-Scale Software Engineering” 
 
 The main purpose of this case study is to increase the understanding of the factors that cause overscoping, increased the attention to this risk, and use some steps addressing and avoiding overscoping in the project. In this article, case study is divided into three step. The first step, according to one of the authors’ industry experience, established a hypothesis about possible cause of overscoping and possible effects of overscoping. This hypothesis, as the starting point of the interview appeared in the second step. The third step, the interview results were validated by using a questionnaire to six other employees from the same company.
 
-The results pointed out that overscoping is a challenge for requirements engineering and project management. For the case company, overscoping is mainly caused by the fast-moving market-driven domain. In the early software development phase, low participation of relevant developers for the development of the overall goal will lead to a lot of unrealistic project scope. Our research indicates that overscoping may lead to a lot of negative effects, such as quality problems, delays or cannot meet the target expectations of customers. Delay and quality problems are very expensive. This will not only need to spend money to repair but also lose market share and brand value. We found overscoping will lead to more overscoping, and communication gaps. For the case company, despite increasing agile RE practices, overscoping is still a problem. We conclude that improvement needs continuous optimisation the project scope, combine with implementation cost and schedule estimates, close cooperation of cross-functional teams, thereby reducing the communication gaps. Conclusions of this paper can be used to define the potential factors in order to achieve more realistic project scope.
+The results pointed out that overscoping is a challenge for requirements engineering and project management. For the case company, overscoping is mainly caused by the fast-moving market-driven domain. In the early software development phase, low participation of relevant developers for the development of the overall goal will lead to a lot of unrealistic project scope. Our research indicates that overscoping may lead to a lot of negative effects, such as quality problems, delays or cannot meet the target expectations of customers. Delay and quality problems are very expensive. This will not only need to spend money to repair but also lose market share and brand value. We found that overscoping can e excessive and lead to more such as communication problems For the case company, despite increasing agile RE practices, overscoping is still a problem. We conclude that improvement needs continuous optimisation the project scope, combine with implementation cost and schedule estimates, close cooperation of cross-functional teams, thereby reducing the communication gaps. Conclusions of this paper can be used to define the potential factors in order to achieve more realistic project scope.
 
 ####		–  Wnuk et al. “Factors Affecting Decision Outcome and Lead-time in Large-Scale Requirements Engineering”  
 This paper use case study and survey to investigate the factors affecting decision outcome and lead-time in LSRE. The decision lead-time is the time required to analyse the impact of a decision under this context. The decision outcome is a specific outcome of the decision process called acceptance or rejection under this context. To research on this area, there are three research questions and six hypothesis. After case study and survey among 50 practitioners, they conclude some results. When the decision affect more products, the lead-time to make a decision will increases.  Decision maker should know more complex decisions may take more time. According to the statistical analysis of the decision log, it is more likely to accept the issues of changing requests by important customers. At the same time, the lead-time to accept a decision is shorter than to reject a decision. The number of products affected by a decision increase the decision lead-time. Due to more complex decision take more time, it is wise to decrease their complexity for faster decision. 
