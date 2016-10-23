@@ -9,7 +9,7 @@ The project that has less than 1000 requirements[10]. The project has a complex 
 ####“A case study evaluation of the guideline-supported QUPER model for elicitation of quality requirements”
 This paper is a case study of the QUPER model. It presents the detailed practical guidelines of how to use QUPER and added introduction of how to incorporate cost dependencies between QR. And then, they use the detailed guidelines to evaluate QUPER’s applicability with real QR. It also discussed how to define the breakpoints and barriers and the different important level of the three levels. 
 
-This section shown the practical guidelines of QUPER. 1) Identify candidate QR which considered relevant features, market segment, competitor and hardware platform capability. 2) For each selected QR, define a scale and a measurement unit to express the level of quality of QR. 3) Identify reference levels for each QR based on actual products. 4) Define market expectations to elicit quality breakpoints. 5) Estimate the cost in terms of the cost barriers. 6) Propose candidate requirements, discuss and decide actual requirements for the coming release. 7) If cost dependencies between QR are considered important for cost estimations, identify which module needs to be changed if that QR will be improved beyond the “next” breakpoint.
+This section showed the practical guidelines of QUPER. 1) Identify candidate QR which considered relevant features, market segment, competitor and hardware platform capability. 2) For each selected QR, define a scale and a measurement unit to express the level of quality of QR. 3) Identify reference levels for each QR based on actual products. 4) Define market expectations to elicit quality breakpoints. 5) Estimate the cost in terms of the cost barriers. 6) Propose candidate requirements, discuss and decide actual requirements for the coming release. 7) If cost dependencies between QR are considered important for cost estimations, identify which module needs to be changed if that QR will be improved beyond the “next” breakpoint.
 
 The evaluation shows that the QUPER model is easy to understand, improves the understanding of QR,  and doesn’t take too much time to apply in practice. In the three views, roadmap view is the most important view, benefit view may be helpful for specifying QR, and cost view is the least important view. 
 
@@ -100,23 +100,23 @@ Jenkins is a service from third-party vendors. But if you have a big list of sof
 
 ######Buildbot[8]
 
-Buildbot is developed in Python and based on the Twisted framework. It began as an alternative to the Tinderbox project. Now it is used in Mozilla, Webkit, Chromium, and others. The ideology behind this setup is that most CI tools have a fixed fundamental design and limited to the basic design tools envisaged by the author. But use cases may have those assumptions to be violated.The Buildbot’s design allows the installation to change as the requirements change, meeting your unique needs with a simple process.
+Buildbot is developed in Python and based on the Twisted framework. It began as an alternative to the Tinderbox project. Now it is used in Mozilla, Webkit, Chromium, and others. The ideology behind this setup is that most CI tools have a fixed fundamental design and limited to the basic design tools envisaged by the author. But use cases may have those assumptions to be violated.
 
 Travis CI, Strider, and Integrity are all common tools for continuous integration. 
 
 ######My experiences of using Jenkins: 
 
-Easy to install: We only need to download the latest jenkins.war files from the Jenkins home page and then run java -jar jenkins.war. We don’t  need additional installation and install the database;
-
-Easy to configure: Jenkins provides rich management and configuration functions, including system configuration, management plug-in, view system information, system log, node management, Jenkins command line window, information statistical and other functions. When I tried it, I found Jenkins very useful.
+Easy to install: We only need to download the latest jenkins.war files from the Jenkins home page and then run java -jar jenkins.war. We don’t need to install the database;
 
 Change support: Jenkins can acquire and generate the code update lists  from the code repository (Subversion / CVS) and outputs to the compiler output information.
+
+Easy to configure: Jenkins provides rich management and configuration functions, including system configuration, management plug-in, view system information, system log, node management, Jenkins command line window, information statistical and other functions. When I tried it, I found Jenkins very useful.
 
 Support permanent link: Users access Jenkins via web, and these web page link addresses are permanent link addresses, so you can use these links directly in various documents.
 
 Support distributed build: Jenkins can distribute integrated construction work to multiple computers to complete.
 
-Support third-party plug-ins: Jenkins also provides a wealth of plug-in support, which makes Jenkins become more and more powerful. We can easily install a variety of third-party plug-ins, thus facilitating quick integration of third-party applications. For example, Jenkins provides a plug-in for IBM Rational ClearCase support.
+Support third-party plug-ins: Jenkins also provides a wealth of plug-in support, which makes Jenkins become more and more powerful. We can easily install a variety of third-party plug-ins, thus facilitating a quick integration of third-party applications. For example, Jenkins provides a plug-in for IBM Rational ClearCase support.
 
 #####Reference
 [8] “6 top continuous integration tools,” Opensource.com. [Online]. Available: https://opensource.com/business/15/7/six-continuous-integration-tools.
@@ -199,7 +199,7 @@ Because there are many different levels and forms of requirements, so we cannot 
 
 ####–  Regnell & Brinkkemper “Market-Driven Requirements Engineering for Software Products” (Chapter 13 in Engineering and Management of Software Requirements)  
 
-This paper is mainly described the context and concepts of MDRE, and briefly compare it with the customer-specific development. 
+This paper has mainly described the context and concepts of MDRE, and briefly compare it with the customer-specific development. 
 
 Market-driven development is different from the bespoke development that the product is specific to the needs and wishes of one customer. MDRE refers to the situation where the product is offered to an open market with many customers, the development costs are divided among many buyers and the potential profit is rewarded to the producer. MDRE covers the classical RE activities like elicitation, specification and validation. It also covers the release management and market analysis which is specific to MDRE. The following are some differences between MDRE and bespoke development. 
 
@@ -211,11 +211,11 @@ MDRE:
 5. Case validation in the MDRE is often delayed until a late stage of the development. 
 
 Bespoke:
-1. The main goal of the bespoke development is to realisation of a contract and compliance to a requirements specification. 
+1. The main goal of the bespoke development is to realization of a contract and compliance to a requirements specification. 
 2. Int the bespoke products, whether the product is success or not is determined by customer satisfaction and user acceptance. 
 3. The lifecycle of the bespoke project is often divided into development first and then maintenance. 
 4. In the bespoke development, much effort is devoted to negotiation and conflict resolution. 
-5. In the bespoke development, validation is continuous doing through the contacts between the customer and the developers. 
+5. In the bespoke development, validation is continuously doing through the contacts between the customer and the developers. 
 
 There are some challenges in MDRE: find a good balance between technology-driven and need-driven requirements; communication and collaboration between marketing and development; requirements dependencies make release planning difficult; cost-value estimation. The key issue of MDRE is to continuously improve in managing these challenges to make it ahead of the competitors. 
 
@@ -223,15 +223,15 @@ The MDRE process quality is very important in requirements selection. The alfa/b
 
 There are two typical ingredients in MDRE data management. The requirements state model is used for requirements refinement progress tracking. There are two modes in the requirement state model. 
 
-In the continuous mode, product manager receive and register all kinds of requirements. It includes the following steps:
+In the continuous mode, product manager receives and register all kinds of requirements. It includes the following steps:
 
 Candidate: Each received requirements will have the status “Candidate”.
 
 Approved: The requirements with status Candidate will be reviewed at regular time intervals. The requirements that are being accepted get the status “Approved”. This process is very difficult as it is hard to confirm the quality of the requirements. 
 
-Specified: The pervious description of the requirements is almost not very clearly and detail for planning and developing, then a more suitable and detailed specification is linked to the requirements. 
+Specified: The previous description of the requirements is almost not very clearly and detail for planning and developing, then a more suitable and detailed specification is linked to the requirements. 
 
-Discarded:  The requirements being rejected get the statusDiscarded. The reason report will be send to the submitter. The discarded requirements are not deleted from the database to enable future analyses. 
+Discarded:  The requirements being rejected get the statusDiscarded. The reason report will be sent to the submitter. The discarded requirements are not deleted from the database to enable future analyses. 
 
 In release mode, the release scope is frozen in order to manage the release development project. It includes the following steps:
 
@@ -247,16 +247,16 @@ The requirements repository is used to store the relevant attributes of candidat
 
 ####–  Wnuk et al. “Are You Biting Off More Than You Can Chew? A Case Study on Causes and Effects of Overscoping in Large-Scale Software Engineering” 
 
-The main purpose of this case study is to increase the understanding of the factors that cause overscoping, increased the attention to this risk, and use some steps addressing and avoiding overscoping in the project. In this article, case study is divided into three step. The first step, according to one of the authors’ industry experience, established a hypothesis about possible cause of overscoping and possible effects of overscoping. This hypothesis, as the starting point of the interview appeared in the second step. The third step, the interview results were validated by using a questionnaire to six other employees from the same company.
+The purpose of this study is to deepen the understanding of the factors leading to overscoping, increased the attention to this risk, and use some steps addressing and avoiding overscoping in the project. In this article, case study is divided into three step. The first step, according to one of the authors’ industry experience, established a hypothesis about possible cause of overscoping and possible effects of overscoping. This hypothesis, as the starting point of the interview appeared in the second step. The third step, the interview results were validated by using a questionnaire to six other employees from the same company.
 
 The results pointed out that overscoping is a challenge for requirements engineering and project management. For the case company, overscoping is mainly caused by the fast-moving market-driven domain. In the early software development phase, low participation of relevant developers for the development of the overall goal will lead to a lot of unrealistic project scope. Our research indicates that overscoping may lead to a lot of negative effects, such as quality problems, delays or cannot meet the target expectations of customers. Delay and quality problems are very expensive. This will not only need to spend money to repair but also lose market share and brand value. We found that overscoping can lead to more overscoping and other issues, such as communication gaps. For the case company, despite increasing agile RE practices, overscoping is still a problem. We conclude that improvement needs continuous optimisation the project scope, combine with implementation cost and schedule estimates, close cooperation of cross-functional teams, thereby reducing the communication gaps. Conclusions of this paper can be used to define the potential factors in order to achieve more realistic project scope.
 
 ####		–  Wnuk et al. “Factors Affecting Decision Outcome and Lead-time in Large-Scale Requirements Engineering”  
-This paper use case study and survey to investigate the factors affecting decision outcome and lead-time in LSRE. The decision lead-time is the time required to analyse the impact of a decision under this context. The decision outcome is a specific outcome of the decision process called acceptance or rejection under this context. To research on this area, there are three research questions and six hypothesis. After case study and survey among 50 practitioners, they conclude some results. When the decision affect more products, the lead-time to make a decision will increases.  Decision maker should know more complex decisions may take more time. According to the statistical analysis of the decision log, it is more likely to accept the issues of changing requests by important customers. At the same time, the lead-time to accept a decision is shorter than to reject a decision. The number of products affected by a decision increase the decision lead-time. Due to more complex decision take more time, it is wise to decrease their complexity for faster decision. 
+This paper use case study and survey to investigate the factors affecting decision outcome and lead-time in LSRE. The decision lead-time is the time required to analyze the impact of a decision in this context. The decision outcome is a specific outcome of the decision process called acceptance or rejection under this context. To research in this area, there are three research questions and six hypothesis. After case study and survey among 50 practitioners, they conclude some results. When the decision affects more products, the lead-time to make a decision will increases.  Decision maker should know more complex decisions may take more time. According to the statistical analysis of the decision log, it is more likely to accept the issues of changing requests by important customers. At the same time, the lead-time to accept a decision is shorter than to reject a decision. The number of products affected by a decision increases the decision lead-time. Due to a more complex decision take more time, it is wise to decrease their complexity for faster decision. 
 
 ####		–  P. Carlshamre, K. Sandahl, M. Lindvall, B. Regnell, J. Natt och Dag, “An industrial survey of requirements interdependencies in software product release planning”, in Proceedings of the fifth IEEE Interna- tional Symposium on Requirements Engineering, 2001.  
 
-This paper provide an industrial survey in five companies and analysis their requirements’ interdependencies. We found that only about 20% of the requirements are singular. And 20% of the requirements are involved in 75% of all interdependencies. Customer-Specific bespoke product is tend to more functionality-related dependencies, while market-driven product is tend to value-related dependencies. 
+This paper provides an industrial survey in five companies and analysis their requirements’ interdependencies. We found that only about 20% of the requirements are singular. And 20% of the requirements are involved in 75% of all interdependencies. Customer-Specific bespoke product tends to more functionality-related dependencies, while market-driven product tends to value-related dependencies. 
 
 In each case, managers are randomly select 20 high priority requirements from the current requirements repository. Based on these cases, there are six commonly used interdependencies of requirements: 
 
@@ -268,14 +268,15 @@ R1 TEMPORAL R2: means either R1 has to be implemented before R2 or vice versa.
 
 R1 CVALUE R2: means R1 affects the value of R2 for a customer and the value may be either positive or negative. From a product planning view, this relationship is important. It is value-related and is tend to be in a product development situation.  
 
-R1 ICOST R2: means R1 affects the cost of performing R2 and the value could be either positive or negative. In some cases, CVALUE and ICOST are relevant. For instance, R1 increase the value of R2 for the customer, but it increase the cost of implementing R2 at the same time. It is value-related and is tend to be in a product-oriented case. 
+R1 ICOST R2: means R1 affects the cost of performing R2 and the value could be either positive or negative. In some cases, CVALUE and ICOST are relevant. For instance, R1 increase the value of R2 for the customer, but it increases the cost of implementing R2 at the same time. It is value-related and is tend to be in a product-oriented case. 
 
 R1 OR R2: means only on of R1, R2 needs to be performed. 
 
-In some cases, two requirements may have more then one relationship. In the product development perspective, the value-related interdependencies are more common than functionality-related. However in the bespoke development, functionality-related interdependencies are more common than value-related. To support the release planning, a simple visualization technique is apply to the requirements and their interdependencies. It is a powerful tool and is good for release planning. Requirements having no relationship with others are easily spotted and free clusters can be scheduled for any increment in which requires all involved requirements are scheduled for the same increment. Requirements having interdependencies with others should be implemented at early stage and they should be scheduled for the same release in order to simplify realisation and reduce the risks.  
-Company: the main goal in this level is to maximize the total economic benefits of the products. This level is closely related to the scope of the product. It is essential to make an overview of the whole product portfolio includes what have already deployed, what is under development, and those just being planned. GAP, CVA, and IVA can help he company choose between products and keep a balance between high risk-high reward and low risk-low reward development.  It includes three measures: portfolio management, strategic alignment, and the degree of impact. 
+In some cases, two requirements may have more than one relationship. In the product development perspective, the value-related interdependencies are more common than functionality-related. However, in the bespoke development, functionality-related interdependencies are more common than value-related. To support the release planning, a simple visualization technique is applied to the requirements and their interdependencies. It is a powerful tool and is good for release planning. Requirements having no relationship with others are easily spotted and free clusters can be scheduled for any increment in which requires all involved requirements are scheduled for the same increment. Requirements having interdependencies with others should be implemented at early stage and they should be scheduled for the same release in order to simplify realisation and reduce the risks.  
 
-Society: the company also has a great responsibility to the society. Although the company may provide grate benefits to its stakeholder, but it pollutes the environment or kills people have to be considered a failure.  It always considers about the positive and negative externalities. This means neither the developer nor the customer have to bears all the costs or get all the benefits generated by the products. When conduct company strategies, the company can try to maximize the positive effects of their product.
+Company: the main goal in this level is to maximize the total economic benefits of the products. This level is closely related to the scope of the product. It is essential to make an overview of the whole product portfolio includes what have already deployed, what is under development, and those just being planned. GAP, CVA, and IVA can help the company choose between products and keep a balance between high risk-high reward and low risk-low reward development.  It includes three measures: portfolio management, strategic alignment, and the degree of impact. 
+
+Society: the company also has a great responsibility to the society. Although the company may provide grate benefits to its stakeholder, but it pollutes the environment or kills people have to be considered a failure.  It always considers about the positive and negative externalities. This means neither the developer nor the customer has to bears all the costs or get all the benefits generated by the products. When conducting company strategies, the company can try to maximize the positive effects of their product.
 
 This paper also suggests that product strategies should reflect long-term goals, and the goals also have to meet the current market and technology trends.  
 
@@ -284,7 +285,7 @@ This paper also suggests that product strategies should reflect long-term goals,
 In this paper, we use empirical investigation to define the phenomenon of obsolete software requirements, investigate the potential impact and how they are resolved in industry. We have 219 respondents from 45 countries who are industry practitioners. This paper proposed seven research questions. The questionnaire was created based on a literature review of relevant papers.
 
 RQ1: Based on empirical data, what would be an appropriate definition of Obsolete Software Requirements (OSR)? 
-Based on the results of the questionnaire, our respondents defined an OSR as follow: “a software requirement (implemented or not) that is no longer required for the current release or future releases, and it has very limit business value for the potential customers or users of a software artifact.’’ When consider demographics’ impact, The definition of OSRs is not significantly connected to the size of the companies, the length of the typical project, or the domain.
+Based on the results of the questionnaire, our respondents defined an OSR as follow: “a software requirement (implemented or not) that is no longer required for the current release or future releases, and it has very limited business value for the potential customers or users of a software artifact.’’ When consider demographics’ impact, The definition of OSRs is not significantly connected to the size of the companies, the length of the typical project, or the domain.
 
 RQ2: What is the impact of the phenomenon of obsolete software requirements on the industry practice? 
 When asked about the potential impact of OSRs to their product development, in all respondents, 84.3% considered serious or somehow serious. This indicates that most respondents believe OSRs seem to have a significant impact on the product development. For 6% of respondents, OSRs is a very serious problem, while 10% deemed OSRs a Trivial matter. Those respondents who think OSRs serious, mostly worked in large companies and used agile development. Those who considered trivial, more than 80% worked in large companies. Because the big companies tend to use more complex process models.
@@ -296,7 +297,7 @@ RQ4: What methods exist, in industry practice, that help to identify obsolete so
 More than 50% of the respondents proposed that manual ways of discovering OSRs are the main method. At the same time, demographic factors have no significant impact on this question. OSRs identification is mainly a manual activity, less than 10% of the respondents said they have any automatic functionality.
 
 RQ5: When OSRs are identified, how are they typically handled in industry? 
-For managing OSRs, there are some existing processes and practices. When considering this, 73.6% of respondents said they did not consider the needs for manage OSRs during their requirements engineering process. At the same time, 73.6% of respondents said they did not have any procedure to deal with OSRs. This result can be used as clear evidence of a lack of industry-related OSR processing method, and confirms the need for developing methods for managing OSRs. According to the survey answers, more than 60% of respondents think that the identified OSRs should be kept in the requirements document or database, but marked as obsolete. Removing OSRS is an undesirable behaviour.
+For managing OSRs, there are some existing processes and practices. When considering this, 73.6% of respondents said they did not consider the needs for manage OSRs during their requirements engineering process. At the same time, 73.6% of respondents said they did not have any procedure to deal with OSRs. This result can be used as clear evidence of a lack of industry-related OSR processing method, and confirms the need for developing methods for managing OSRs. According to the survey answers, more than 60% of respondents think that the identified OSRs should be kept in the requirements document or database, but marked as obsolete. Removing OSRS is an undesirable behavior.
 
 RQ6: What context factors, such as project size or domain, influence OSRs? 
 The result indicates that the larger the projects, the more likely to have a negative impact from OSRs. OSRs are more likely to affect large-scale requirements project and very large-scale requirements projects.
@@ -311,7 +312,7 @@ Our results show that OSRs is a significant challenge for software system develo
 
 In this paper, Ericsson as an example, based on case studies and interviews to determine the challenges of continuous integration and requirements break down, and how the latter affects the implementation of the continuous integration process.
 
-In order to support more frequent integration, requirements need to be small enough so that the developer can provide individually tested per day, and integration times. Under continuous integration environment which is not always an easy task. So breaking down large user stories into small enough stories with the right level of detail and visible business and customer value has been identified as a challenge. 
+In order to support more frequent integration, requirements need to be small enough so that the developer can provide individually tested per day, and integration times. Under continuous integration environment which is not always an easy task. So breaking down large user stories into smaller one with the right level of detail and visible business and customer value has been identified as a challenge. 
 
 This article only establishes a case study in which the focus and case is an organization. Thus, the unit of analysis is the teams under study that are using continuous integration. From the methodological point of view, the study is from the perspective of interpretation. In this study, a semi-structured interviews were used to collect data. In this study conducts 13 interviews with eight participants from Sweden and five from China.
 
@@ -319,13 +320,13 @@ I will summarize the result based on the different research question.
 
 For RQ1: What are the challenges of implementing a continuous integration process in practice?
 
-There are seven main challenges from the result: developers’ mindset, tools and infrastructure, testing, domain applicability, understanding of continuous integration, code dependencies and software requirements. 
+There are seven main challenges from the result: developers’ mindset, domain applicability, testing, understanding of continuous integration, code dependencies, tools and infrastructure, and software requirements. 
 
 In the opinion of respondents, mindset, tools and infrastructure are the most mentioned. People’s mindset and attitude play an important role when  adopting continuous integration. Similarly, tools, infrastructure and testing also have a significant impact on the success of implementing continuous integration. This means that the use of continuous integration can be considered to introduce a change in the existing software process.
 
 For RQ2: What are the challenges of software requirements breakdown in practice?
 
-There are four main challenges. 
+This paper proposes four primary challenges. 
 
 1. Requirements abstraction 
 
@@ -341,7 +342,7 @@ Breaking down software requirements into small enough units to support the integ
 
 4. Guiding principle 
 
-For the interviewees, no clear process and guidance is a challenge. Since without guidance, how to break down requirements is decided by the teams. Although no unified process has been welcomed by most of the team, especially the more mature team, some of the young team think the lack of a uniform process will make their transition more difficult.
+For the interviewees, no clear process and guidance is a challenge. Since without guidance, how to break down requirements are decided by the teams. Although no unified process has been welcomed by most of the team, especially the more mature team, some of the young team think the lack of a uniform process will make their transition more difficult.
 
 
 For RQ3: How could the breakdown of software requirements influence the adoption of continuous integration? 
